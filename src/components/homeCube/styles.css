@@ -34,8 +34,6 @@
     transform: rotateX(-30deg) rotateY(0deg);
   }
   100% {
-    /* Caso queira um cubo bem doido so descomentar isso */
-    /* transform: rotateX(-30deg) rotateY(360deg) rotateZ(360deg); */
     transform: rotateX(-30deg) rotateY(360deg);
   }
 }
