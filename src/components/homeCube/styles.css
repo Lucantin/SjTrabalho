@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+  animation: animate 4s linear infinite;
+}
+
+.a {
+  --i: 0;
+}
+
+.b {
+  --i: 1;
+}
+
+.c {
+  --i: 2;
+}
+
+.d {
+  --i: 3;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    /* Caso queira um cubo bem doido so descomentar isso */
+    /* transform: rotateX(-30deg) rotateY(360deg) rotateZ(360deg); */
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#e1b7ed, #c32aff);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #e1b7ed;
+  transform: rotateX(90deg) translateZ(100px);
+}
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #c32aff;
+  transform: translateZ(-260px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px #c32aff, 0 0 200px #c32aff, 0 0 300px #c32aff,
+    0 0 400px #c32aff, 0 0 500px #c32aff;
+}
