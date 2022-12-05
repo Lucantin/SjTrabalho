@@ -1,0 +1,46 @@
+.wrapper {
+  margin-top: 10px;
+}
+
+button {
+  display: block;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #000;
+  border: 3px solid #000;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+button span {
+  position: relative;
+  z-index: 2;
+}
+
+button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #c32aff;
+  transition: all 0.35s;
+  border-radius: 7px;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover:after {
+  width: 100%;
+}
