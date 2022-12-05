@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter, Routes as Router } from "react-router-dom";
+import { Footer } from "../components/footer";
 import { Navbar } from "../components/navbar";
 import AboutMe from "../pages/aboutMe";
 import Contact from "../pages/contact";
@@ -14,6 +15,7 @@ const Routes = () => {
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
       </Router>
+      <Footer />
     </BrowserRouter>
   );
 };
