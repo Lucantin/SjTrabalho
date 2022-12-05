@@ -6,13 +6,14 @@ import { ButtonGeneral } from "../../components/button";
 const Contact = () => {
   return (
     <S.Container>
-      <S.Title>Nome</S.Title>
+      <S.Title>Para entrar em contato deixe seus dados</S.Title>
+      <S.SubTitle>Nome</S.SubTitle>
       <InputText />
-      <S.Title>E-mail</S.Title>
+      <S.SubTitle>E-mail</S.SubTitle>
       <InputText />
-      <S.Title>Endereço</S.Title>
+      <S.SubTitle>Endereço</S.SubTitle>
       <InputText />
-      <S.Title>Telefone</S.Title>
+      <S.SubTitle>Telefone</S.SubTitle>
       <InputText />
       <ButtonGeneral />
     </S.Container>
