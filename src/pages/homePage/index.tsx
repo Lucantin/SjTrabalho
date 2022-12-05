@@ -1,6 +1,11 @@
 import React from "react";
+import { Cube } from "../../components/homeCube";
 import * as S from "./styles";
 
 export const Home = () => {
-  return <h1>teste</h1>;
+  return (
+    <S.Container>
+      <Cube />
+    </S.Container>
+  );
 };
