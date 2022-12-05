@@ -1,28 +1,20 @@
 import styled from "styled-components";
 
-export const Nav = styled.div`
-  display: flex;
-  justify-content: space-between;
-  background-color: #222;
-  padding: 1em;
-`;
-
 export const Container = styled.div`
-  width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
   flex-wrap: wrap;
+  padding: 3em;
+  background-color: #222;
 `;
 
 export const List = styled.ul`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
 `;
 
 export const Item = styled.li`
-  margin-right: 5em;
   align-items: center;
 `;
 
