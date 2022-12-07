@@ -12,6 +12,5 @@ export const Cube = () => {
         <span className="d"></span>
       </div>
     </div>
-    /* asdasd */
   );
 };
